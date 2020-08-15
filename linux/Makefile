@@ -2,7 +2,7 @@ generate_ssh_key:
 	ssh-keygen -t rsa  
 
 get_ssh_key:
-	cat /home/osboxes/.ssh/id_rsa.pub
+	cat ~/.ssh/id_rsa.pub
 
 vim_install:
 	sudo apt-get install vim -y
