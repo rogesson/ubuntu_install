@@ -10,5 +10,8 @@ asdf_install_ruby_2_4_0:
 	sudo apt purge libssl-dev && sudo apt install libssl1.0-dev -y
 	asdf install ruby 2.4.0
 
+asdf_install_ruby_2_2_2:
+	asdf install ruby 2.2.2
+
 asdf_use:
 	asdf global ruby $(version)
