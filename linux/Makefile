@@ -17,3 +17,5 @@ asdf_install:
 	echo '. $$HOME/.asdf/asdf.sh' >> bashrc
 	source ~/.bashrc
 
+tmux_install:
+	sudo apt-get install tmux
