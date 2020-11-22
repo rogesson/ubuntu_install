@@ -14,8 +14,7 @@ vim_plug_install:
 
 asdf_install:
 	git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0-rc1
-	echo '. $$HOME/.asdf/asdf.sh' >> bashrc
+	echo '. $(HOME)/.asdf/asdf.sh' >> bashrc
+	. $(HOME)/.asdf/asdf.sh
 	source ~/.bashrc
 
-tmux_install:
-	sudo apt-get install tmux
