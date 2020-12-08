@@ -37,3 +37,6 @@ docker_compose_install:
 	sudo chmod +x /usr/local/bin/docker-compose
 	docker-compose --version
 
+oh_my_zsh:
+	sudo apt-get install zsh
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
