@@ -14,10 +14,13 @@ vim_plug_install:
 
 asdf_install:
 	git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0-rc1
-	echo '. $(HOME)/.asdf/asdf.sh' >> bashrc
+	echo '. $(HOME)/.asdf/asdf.sh' >> bashrc'
 	echo '-e "\n. $(HOME)/.asdf/asdf.sh" >> ~/.zshrc
 	. $(HOME)/.asdf/asdf.sh
 	source ~/.bashrc
+
+asdf_update:
+	asdf plugin-update ruby
 
 docker_install:
 	sudo apt update
