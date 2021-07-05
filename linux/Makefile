@@ -1,5 +1,5 @@
 generate_ssh_key:
-	ssh-keygen -t rsa  
+	ssh-keygen -t rsa
 
 get_ssh_key:
 	cat ~/.ssh/id_rsa.pub
@@ -33,8 +33,9 @@ docker_install:
 	sudo systemctl status docker
 	sudo groupadd docker
 	sudo gpasswd -a $USER docker
+	sudo usermod -aG docker $USER
+	newgrp docker
 	sudo service docker restart
-	export DOCKER_HOST=127.0.0.1
 
 docker_compose_install:
 	sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
