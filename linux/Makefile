@@ -48,3 +48,6 @@ oh_my_zsh:
 
 install_terminator:
 	sudo apt-get install terminator
+
+install_chromium:
+	sudo apt install chromium-browser
