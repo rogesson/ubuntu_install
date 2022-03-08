@@ -38,14 +38,13 @@ docker_install:
 	sudo service docker restart
 
 docker_compose_install:
-	sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+	sudo curl -L https://github.com/docker/compose/releases/download/1.26.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 	sudo chmod +x /usr/local/bin/docker-compose
 	docker-compose --version
 
 oh_my_zsh:
 	sudo apt-get install zsh
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 
 install_terminator:
 	sudo apt-get install terminator
