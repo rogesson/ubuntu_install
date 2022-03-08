@@ -45,3 +45,7 @@ docker_compose_install:
 oh_my_zsh:
 	sudo apt-get install zsh
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+install_terminator:
+	sudo apt-get install terminator
